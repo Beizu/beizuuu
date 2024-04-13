@@ -2,50 +2,55 @@
 <html>
 <head>
     <title>Beizu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             font-family: 'Times New Roman', serif;
             background-color: black;
             color: white;
+            margin: 0; /* Loại bỏ margin mặc định */
+            padding: 0; /* Loại bỏ padding mặc định */
         }
         .avatar {
             border-radius: 50%;
-            width: 8%;
+            width: 15%; /* Sử dụng phần trăm cho kích thước */
+            max-width: 150px; /* Giới hạn kích thước tối đa */
             height: auto;
             position: absolute;
-            top: 40%;
-            left: 26%;
+            top: 20%;
+            left: 50%;
             transform: translate(-50%, -50%);
             border: 3px solid black;
         }
         .cover {
-            width: 62%;
+            width: 100%;
             height: 40vh;
-            position: absolute;
-            top: 0;
-            left: 19%;
             background: url('cover.jpg') no-repeat center center;
             background-size: cover;
+        }
+        header, section, footer {
+            text-align: center; /* Canh giữa nội dung */
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <div class="cover"></div>
     <img class="avatar" src="avatar.jpg" alt="Avatar">
-    
+
     <header>
-        <h1 style="position: absolute; top: 38%; left: 31%; font-size: 3em;">Beizu</h1>
-        <p style="position: absolute; top: 48%; left: 20%; font-size: 2em;">"There're no mistakes, just happy accidents"</p>
+        <h1>Beizu</h1>
+        <p>"There're no mistakes, just happy accidents"</p>
     </header>
     <section>
-        <h2 style="position: absolute; top: 56%; left: 20%; font-size: 2.5em;">About me</h2>
-        <p style="position: absolute; top: 63%; left: 20%; font-size: 1.5em;">- I come from Vietnam and am studying at <a href="https://hcmus.edu.vn" style="color: white;">HCMUS</a>. My hobby is go sightseeing and make everyone happy :></p>
-        <p style="position: absolute; top: 69%; left: 20%; font-size: 1.5em;">- I make this site just for practicing :></p>
-        <p style="position: absolute; top: 75%; left: 20%; font-size: 1.5em;">- Thanks for visiting my site, and one last thing I want to say to you is to wish you a good day <3</p>
+        <h2>About me</h2>
+        <p>- I come from Vietnam and am studying at <a href="https://hcmus.edu.vn" style="color: white;">HCMUS</a>. My hobby is go sightseeing and make everyone happy :></p>
+        <p>- I make this site just for practicing :></p>
+        <p>- Thanks for visiting my site, and one last thing I want to say to you is to wish you a good day <3</p>
     </section>
     <footer>
-        <h3 style="position: absolute; top: 80%; left: 20%; font-size: 2.5em;">Contact me</h3>
-        <p style="position: absolute; top: 87%; left: 20%; font-size: 1.5em;">- Contact me if you want ;'> <a href="https://www.facebook.com/beizuuu" style="color: yellow;">BaoLuu</a></p>
+        <h3>Contact me</h3>
+        <p>- Contact me if you want ;'> <a href="https://www.facebook.com/beizuuu" style="color: yellow;">BaoLuu</a></p>
     </footer>
 </body>
 </html>
